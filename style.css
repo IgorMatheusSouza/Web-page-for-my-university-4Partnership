@@ -1,0 +1,145 @@
+
+
+.container{
+   width:1170px;
+    max-width: 100%;
+
+}
+
+.mySlide{
+     width: 100%;
+max-width: 100%;
+    margin-top: -30px;
+    
+}
+
+#fullcarousel-example{
+    margin-top: -20px;
+    background-color: #222;
+    
+}
+ #img-4partnership{
+     width: 50%;
+       margin: auto;
+     display: block;
+    }
+.item img{
+    
+    display: block;
+    margin: auto;
+    
+}
+.Menu-but{
+	font-family:'Roboto Condensed', sans-serif;
+    margin-left:9px;
+    padding: 12px 8px;
+    border-radius: 9px;
+}
+
+.jumbotron{
+    background-color:rgba(0,153,51,.2);
+    
+}
+.jumbotron > h1{
+    text-align: center;
+    
+}
+#text4{
+    font-size: 76pt;
+    color: green;
+}
+
+.coluna-demo1{
+    
+   background:rgba(0,102,204,.2)!important;
+}
+
+.coluna-demo2{
+     background:rgba(51,255,0,.2)!important;              
+}
+
+#logo{
+    margin-left: -20px;
+    font-size: 42pt;
+    color: green;
+}
+
+
+#logo-span:hover{
+	transition: 2s ease-in-out;
+	font-size: 26pt;
+	color: rgba(51,204,102,.6);   
+}
+#logo-span{
+    font-size: 26pt;
+    color: aliceblue;
+}
+
+footer a{
+    color:green;
+    text-decoration: none;
+    
+}
+footer{
+    
+    margin-top: 100px;
+    color: aliceblue;
+    background-color: #222;
+    display: block;
+}
+
+#img-log{
+    margin-top: 6px;
+    float: right;
+    
+}
+
+
+
+@media (max-width:768px){
+    .container{
+   width:100%;
+    }
+    #img-4partnership{
+        width: 100%;
+    }
+    
+    #text4{
+    font-size: 46pt;
+    color: green;
+}
+    .text-mobile{
+        font-size: 9pt!important;
+        
+    }
+    .text-mobile2{
+        font-size: 14pt;
+    }
+    
+    .carousel-caption > h3, #pRecentes{
+        display: none;
+        
+    }
+    .Menu-but{
+    font-size: 10pt;    
+	font-family:'Roboto Condensed', sans-serif;
+    margin-left:5px;
+    padding: 6px 4px;
+    border-radius: 9px;
+}
+    
+    #pRecentes{
+    display: none;
+    }
+    
+    #img-log{
+        width: 30%;
+        margin-right: 10%;
+    }
+    #my-bt {
+       
+        margin-left: 25%;
+        width:50%!important;
+    }
+    
+}

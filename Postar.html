@@ -1,0 +1,314 @@
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="imgs/ico.png">
+        <title>4Partnership</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="jumbotron.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="minhaPagina.css" rel="stylesheet">
+        <link href="paginaBuscar.css" rel="stylesheet">
+    
+</head>
+    
+<body>
+ 
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header ">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" id="logo" href="index.html">4<span id="logo-span">Partnership</span></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       
+                        <form onclick="mudarPagina()" class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Buscar...">
+                            </div>
+                           <button type="submit" onclick="pesquisar()" class="btn btn-default">Pesquisar</button>
+                        </form>
+                         <a href="paginaBuscar.html"><button type="button" class="btn btn-success navbar-btn Menu-but">Página de Busca</button></a>
+                        
+                        
+                        
+                        <a href="minhaPagina.html" ><button type="button" class="btn btn-success navbar-btn Menu-but">Minha página</button></a>
+                    
+                    
+                        <a href="Postar.html"><button type="button" class="btn btn-success navbar-btn Menu-but">Postar</button></a>
+                        
+                        
+                        <a href="posts-line.html"><button type="button" class="btn btn-success navbar-btn Menu-but">Posts-line</button></a>
+                        
+                        <a href="minhaPagina.html"> <img id="img-log" onclick="FloginOut()"src="imgs/login.png" class="col-md-1 col-lg-1 col-sm-1 col-xs-4"></a>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+        </nav>
+        <div class="container">
+            
+            <div></div>
+        </div>
+        
+<div class="container" id="cadastro-cont-desapear">         
+<div  id="container-cadastrar">
+<h1>Fazer login</h1>
+<div id="go-center">    
+<div class="input-group col-md-8 col-lg-8 col-sm-12">
+  <span class="input-group-addon" id="sizing-addon8">Login</span>
+  <input type="text"  class="form-control" placeholder="Nome de login" aria-describedby="sizing-addon8" id="login">
+    
+</div>
+
+<div class="input-group col-md-8 col-lg-8 col-sm-12">
+  <span class="input-group-addon" id="sizing-addon8">senha</span>
+  <input type="password"  class="form-control" placeholder="********" aria-describedby="sizing-addon8" id="senha">
+    
+</div>
+</div>
+<input type="button" class="btn btn-success" onclick="Flogin()" id="btn-cadastrar" value="Entrar">
+    
+    
+    
+    
+    
+    
+    
+<h1>Cadastrar</h1>
+<div class="input-group ">
+  <span class="input-group-addon" id="sizing-addon1">Nome Completo</span>
+  <input type="text" class="form-control" placeholder="Nome" aria-describedby="sizing-addon1" id="cNome">
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="sizing-addon2">Data de Nascimento</span>
+  <input type="text" id="cData" class="form-control" placeholder="00/00/0000" aria-describedby="sizing-addon2">
+</div>
+
+<div class="input-group ">
+  <span class="input-group-addon" id="sizing-addon3">E-mail</span>
+  <input type="text" id="email" class="form-control" placeholder="meu-email@meu-email.com.br" aria-describedby="sizing-addon3">
+</div>
+
+
+
+<div class="input-group ">
+  <span class="input-group-addon" id="sizing-addon4">Telefone</span>
+  <input type="Number" id="ctel"class="form-control" placeholder="(21)90000-0000" aria-describedby="sizing-addon4">
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="sizing-addon5">Cidade</span>
+  <input type="text" id="cidade" class="form-control" placeholder="cidade" aria-describedby="sizing-addon5">
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="sizing-addon6">CEP</span>
+  <input type="text" id="cep" class="form-control" placeholder="CEP 55555-555" aria-describedby="sizing-addon6">
+</div>
+
+<div class="input-group ">
+  <span class="input-group-addon" id="sizing-addon7">Áreas de interesse</span>
+  <input id="cInteresse" type="text" class="form-control" placeholder="engenharia" aria-describedby="sizing-addon7">
+</div>
+
+<div class="input-group ">
+  <span class="input-group-addon" id="sizing-addon8">Gostos e hobbies</span>
+  <input type="text" id="hobby" class="form-control" placeholder="desenhar/tocar guitarra" aria-describedby="sizing-addon8">
+    
+</div>
+    
+    <div id="divTextError">
+    </div>
+ <hr align="center" width="100%" height="5px" color=red>
+               
+<div class="input-group col-md-8 col-lg-8 col-sm-12">
+  <span class="input-group-addon" id="sizing-addon8">Novo Login</span>
+  <input type="text"  class="form-control" placeholder="Nome de login" aria-describedby="sizing-addon8" id="novoLogin">
+    
+</div>
+
+ 
+    
+<div class="input-group col-md-8 col-lg-8 col-sm-12">
+  <span class="input-group-addon" id="sizing-addon8">Nova Senha</span>
+  <input type="password"  class="form-control" placeholder="******" aria-describedby="sizing-addon8" id="novaSenha">
+    
+</div>
+
+<input type="button" class="btn btn-success" onclick="Fcadastrar()" id="btn-cadastrar" value="Cadastrar">
+
+
+
+    
+<div id="divTextError">
+    </div>
+           
+</div>
+</div>
+    
+<div class="container" id="logado-cont-aparecer">
+   <div class="logado-info">
+    <div class="row">
+    <div id="id-usuario" class="col-md-6 col-sm-6 col-xs-12" > 
+    <img src="imgs/Sem-perfil.png" id="perfil-img" class="col-lg-4 col-md-4 col-sm-4 col-xs-4"  alt="perfil-img">
+    <h3 class="col-8 text-mobile2 my-name" id="main-name">Igor Matheus de Souza</h3>
+    <h5 onclick="mymsg()" class="text-success">ver perfil</h5>    
+        
+     </div>
+        
+    <div id="id-usuario2" class="col-md-6 col-sm-6 col-xs-12" > 
+        
+    
+    <ul>
+   <li onclick="mymsg()" class="text-success">Mensagens</li>
+    <li onclick="mymsg()" class="text-success">Meus posts</li> 
+    <li onclick="mymsg()" class="text-success">Editar perfil</li>     
+    <li class="text-success" onclick="FloginOut()">Sair da conta</li> 
+    </ul>
+    </div> 
+        
+    </div>
+    
+    
+</div>
+        
+<div id="postar-id">        
+
+<div  class="panel panel-success col-12">
+  <div class="panel-body bg-green text-center">
+    <h1 class="text-mobile2">Poste seu projeto ou ideia</h1>
+  </div>
+  <div class="panel-footer"><h4 class="text-mobile">Aqui você pode postar seus projetos ou trabalhos e o sistema irá automaticamente apresenta-los para pessoas com os mesmos interesses ou na mesma área que você. Assim você estará em contato com pessoas que podem futuramente ser seu parceiro(a) profissional.</h4></div>
+</div>
+        
+        
+<div class="row" id="form-postar">
+  <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <p class="btn" type="button"><b>Título</b></p>
+      </span>
+      <input type="text" id="titulo" class="form-control" placeholder="Ex: Procuro guitarrista para trabalhar em um estudio">
+    </div>
+  </div>
+
+    
+    
+    
+<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <p class="btn text-mobile" type="button"><b>Descrição</b></p>
+      </span>
+        <textarea type="text" class="form-control" id="input-post"></textarea>
+    </div>
+  </div>
+   
+<div id="img-add" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <img src="imgs/add.png" class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+     <img src="imgs/add.png" class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+     <img src="imgs/add.png" class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+    
+</div>
+     
+</div>        
+     
+   <input type="button" class="btn btn-success" onclick="postar()" id="btn-postar" value="Postar">       
+</div>        
+
+        
+<div id="postado">
+    <h3 class="text-center text-success">Postagem realizada com sucesso!</h3>
+    <h5 class="text-center text-info text-mobile2 text-success">Veja sua Postagem abaixo.</h5>
+<img src="imgs/assurance-icon.png" class="col-sm-8 col-sx-8" id="success-icon" alt="success">
+    
+    
+    
+    <div class="col-md-12 mar-top  col-lg-12">
+    <img class="col-md-2 col-sm-3 col-xs-3 " id="perfil-img2"  src="imgs/Sem-perfil.png" alt="">    
+    
+        
+    
+    <h3 id="titulo-p" class="text-center"></h3>
+    <h4 id="post-p"></h4>
+        
+        
+        
+    </div>
+    
+    <img class="col-md-4 col-sm-4 col-xs-4 " style="float:right" src="imgs/empty.jpg"  alt=""> 
+    
+     <h4 class="col-md-4 col-sm-4 col-xs-4 " id="nome-p">sds</h4>
+    <h4 class="col-md-4 col-sm-4 col-xs-4 "  id="cidade-p"></h4>
+</div>        
+        
+    </div>       
+        
+<footer>
+       
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+					<h6>Copyright &copy; 2017 </h6><h6>Igor Matheus de Souza F. Dorbação</h6>
+					</div><!-- end col-sm-2 -->
+					
+				<div class="col-sm-4">
+						<h6>Sobre nós</h6>
+						<p class="text-mobile">4partnership foi desenvolvido por Igor Matheus de Souza Ferreira Dorbação como projeto das diciplinas de Desenvolvimento de páginas Web, Fundamentos de Sistemas de Informção e Tecnicas de Prgramação I.</p>
+					</div>
+					
+					<div class="col-sm-2">
+						<h6>Navegação</h6>
+						<ul class="unstyled">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="paginaBuscar.html">Projetos</a></li>
+							<li><a href="minhaPagina.html">Minha seção</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-sm-2">
+						<h6>Siga-nos</h6>
+						<ul class="unstyled">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-sm-2">
+						<h6>Programado por <br><span class="lead">Igor Matheus</span></h6>
+                        
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+
+    
+<!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="javascript.js"></script>
+</body>
+
+</html>    
